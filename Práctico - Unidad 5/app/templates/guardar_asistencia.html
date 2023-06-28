@@ -15,7 +15,7 @@
 
         <label for="fecha">Fecha:</label>
         <input type="date" name="fecha" required>
-
+        <br>
         <table>
             <thead>
                 <tr>
@@ -44,7 +44,11 @@
                 {% endfor %}
             </tbody>
         </table>
+        <br>
         <input type="submit" value="Guardar Asistencia">
+        <br>
+        <li><a href="{{url_for('preceptor_home')}}">Pagina principal</a></li>
+
     </form>
 
 <a href="{{ url_for('preceptor_home') }}" class="btn btn-primary", >Volver al inicio</a>
