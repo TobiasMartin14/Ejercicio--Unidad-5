@@ -1,0 +1,15 @@
+
+{%  extends "base_template.html" %}
+
+{% block body %}
+<h2> Bienvenido/a Prece {{ usuario.nombre }}! </h2>
+<h3> ¿Que desea realizar hoy? </h3>
+<ul>
+  <li><a href="{{url_for('registrar_asistencia')}}">Registrar asistencia de un curso</a></li>
+  <br>
+  <li><a href="{{url_for('mostrar_informe')}}">Mostrar Informe</a></li>
+  <br>
+  <li><a href="{{url_for('cerrar_sesion')}}">Cerrar sesión</a></li></ul>
+  <br>
+{% endblock %}
+
