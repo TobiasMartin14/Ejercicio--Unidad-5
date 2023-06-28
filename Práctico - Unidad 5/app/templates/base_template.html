@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head class="text-center">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Colegio San Miguel</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/layout.css") }}">
+</head>
+
+<body class="text-center">
+  <header>
+    <h2>Colegio San Miguel</h2>
+  </header>
+    {% block body %}{% endblock %}
+      <div class="myDiv">
+      <li><a href="{{url_for('inicio')}}">Inicio</a></li>
+      <br>
+      </div>
+    <footer>
+      <p>Pres. Uriburu 362, Adrogué, Buenos Aires - 4294-5286</p>
+  </footer>
+</body>
+</html>
+
